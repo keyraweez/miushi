@@ -1,5 +1,9 @@
+@charset "UTF-8";
 body {
   font-family: 'Open Sans', sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 * {
@@ -1087,7 +1091,7 @@ footer {
           transform: scale(1.1);
 }
 
-@media (max-width: 751px) {
+@media (max-width: 1025px) {
   .nav__main, .nav::before,
   .header__adress, .adress__text,
   .header__mail, .header__phone, .header__btn {
@@ -1354,4 +1358,60 @@ footer {
   .slick-arrow.slick-prev, .slick-arrow.slick-next {
     background: none;
   }
+
+  footer {
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+
+  .footer-adapt {
+    display: block;
+  }
+
+  .footer-main {
+    display: none;
+  }
+}
+.tab input, .tab-content {
+  display: none;
+}
+
+.tab {
+  font: 0.8rem/1.2 Arial, sans-serif;
+  border: 1px solid #e9eaec;
+  border-radius: 3px;
+  color: #848994;
+  margin-bottom: 10px;
+}
+
+.tab-title {
+  padding: 10px;
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tab-title::after {
+  content: '+';
+  float: right;
+}
+
+.tab-content {
+  padding: 10px 20px;
+}
+
+.tab :checked + .tab-title {
+  background-color: #50a2de;
+  border-radius: 3px 3px 0 0;
+  color: #fff;
+}
+
+.tab :checked + .tab-title::after {
+  content: '−';
+}
+
+.tab :checked ~ .tab-content {
+  display: block;
 }
