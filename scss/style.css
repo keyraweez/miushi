@@ -1408,19 +1408,19 @@ footer {
   color: #fff;
 }
 
-.ac-container label:hover:after,
-.ac-container input:checked + label:hover:after {
+.ac-container label:after,
+.ac-container input + label:hover:after {
   content: '';
   position: absolute;
   width: 24px;
   height: 24px;
   right: 13px;
   top: 7px;
-  background: transparent url(http://netcribe.com/example/arrow_down.png) no-repeat center center;
+  background: transparent url(../imgs/down.png) no-repeat center center;
 }
 
 .ac-container input:checked + label:hover:after {
-  background-image: url(http://netcribe.com/example/arrow_up.png);
+  background-image: url(../imgs/up.png);
 }
 
 .ac-container input {
